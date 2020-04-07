@@ -11,34 +11,59 @@
     <script type="text/javascript"></script>
 </head>
 <body>
-    <header class="container">
-        <a id="header-portfolio" class="header-item" href="#">Portfolio</a>
-        <a id="header-about" class="header-item" href="#">About</a>
-        <a id="header-contact" class="header-item" href="#">Contact</a>
-    </header>
-    <div id="about-wrap">
-        <h1 class="title-text">About Nobu</h1>
-        <div class="self-image">
-            <div class="photo-space">   
-                <img id="Own-photo" src="IMG_0402.JPG" alt="写真">
-            </div>
-            <div class="self-introduction">
-                <p class="about-title">Profile</p>
-                <p class="about-p">中川敦之(なかがわのぶゆき)</p>
-                <p class="about-p">兵庫県出身の23歳です。</p> 
-                <p class="about-p">高校卒業後、製造業の仕事を経てエンジニアを目指し転職活動中です。</p>
-                <p class="about-p">希望勤務地は神戸市内です。</p>
-                <p class="about-p">習得しようとしている言語はHTML.CSS.Javascript.JQueryです。</p>
-                <p class="about-p">趣味はフットサルで特技はピアノです。</p>
+    <div class="wrap">
+        <header class="container">
+            <a id="header-portfolio" class="header-item" href="#">Portfolio</a>
+            <a id="header-about" class="header-item" href="#">About</a>
+            <a id="header-contact" class="header-item" href="#">Contact</a>
+        </header>
+        <div id="about-wrap">
+            <h1 class="title-text">About Nobu</h1>
+            <div class="self-image">
+                <div class="photo-space">  
+                    <img id="Own-photo" src="IMG_0402.JPG" alt="写真">
+                </div>
+                <div class="self-introduction">
+                    <p class="about-title">Profile</p>
+                    <p class="about-p">中川敦之(なかがわのぶゆき)</p>
+                    <p class="about-p">兵庫県出身の23歳です。</p> 
+                    <p class="about-p">高校卒業後、製造業の仕事を経てエンジニアを目指し転職活動中です。</p>
+                    <p class="about-p">希望勤務地は神戸市内です。</p>
+                    <p class="about-p">習得しようとしている言語はHTML.CSS.Javascript.JQuery.PHPです。</p>
+                    <p class="about-p">趣味はフットサルで特技はピアノです。</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="Portfolio-wrap">
-        <h1 class="title-text">Portfolio</h1>
-        <div class="Portfolios">
-            <p class="about-p">ECサイトを作成する予定です</p>
+        <div id="Portfolio-wrap">
+            <h1 class="title-text">Portfolio</h1>
+            <div class="Portfolios">
+                <p class="about-p" id="Portfolios-text">ECサイトを作成する予定です。</p>
+            </div>
         </div>
+        <div id="Contact-wrap">
+            <h1 class="title-text">Contact</h1>
+            <div class="Contact-photo-space">
+                <div class="Contact-form">
+                    <h2 class="form-title">お問い合わせフォーム</h2>
+                    <div id="flex-form">   
+                        <div id="left-form-group">
+                            <p class="contact-p">お名前</p>
+                            <input class="form-area" placeholder="山田太郎">
+                            <p class="contact-p">メールアドレス</p>
+                            <input class="form-area" placeholder="TaroYamada@mail.co.jp">
+                        </div>
+                        <div id="right-form-group">
+                            <p class="contact-p">お問い合わせ内容</p>
+                            <textarea id="message-form-area" placeholder="お気軽にお問い合わせください。"></textarea>
+                        </div>
+                    </div>
+                    <div id="button-space">
+                        <input type="submit" value="送信する">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

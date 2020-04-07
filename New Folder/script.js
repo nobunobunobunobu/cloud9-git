@@ -6,7 +6,7 @@ $(function(){
         $('#Portfolio-wrap').fadeIn();
     });
     $('#header-contact').click(function(){
-        alert('作成中!');
+        $('#Contact-wrap').fadeIn();
     });
     $('.header-item').hover(function() {
       $(this).stop().animate({zIndex:1},{
@@ -20,5 +20,8 @@ $(function(){
       })
     },function() {
        $(this).css({transform:'rotateY(0deg)'});
+    });
+    $('#button-space').click(function(){
+      alert('PHPの勉強中のため現在使用できません。')
     });
 });

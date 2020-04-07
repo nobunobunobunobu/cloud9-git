@@ -3,121 +3,247 @@
     padding: 0;
 }
 
+.wrap{
+    overflow: hidden;
+}
+
 .container{
     display: flex;
     justify-content: space-around;
     margin: 24px 12px;
     width: 100%;
-    
 }
+
 .header-item{
     font-size: 18px;
     font-family: 'Kite One', sans-serif;
     color:black;
     text-decoration: none;
-    
 }
+
 #about-wrap{
     display:none;
     width: 100%;
 }
+
 .title-text{
     font-size:55px;
     text-align: center;
     font-family: 'Prata', serif;
 }
-/*.about-text{
-    margin-bottom: 50px;
-}*/
-.about-text p{
-    text-align: center;
     
-}
+
 #Own-photo{
     width: 600px;
     height: 600px;
     border-radius: 50%;
 }
+
 .self-image{
     display: flex;
     margin: 25px 50px;
 }
+
 .self-introduction{
     text-align: center;
     margin: 0 50px 50px 50px;
     border-bottom: solid;
     border-bottom-color: #ffff00;
 }
+
 .about-title{
     border-bottom: solid;
     border-bottom-color: #ffff00;
     font-family: 'Prata', serif;
     font-size: 30px;
 }
+
 .about-p{
     margin: 50px;
     color: gray;
     font-size: 16px;
 }
+
 #Portfolio-wrap{
     display:none;
     width: 100%;
 }
+
 .Portfolios{
     margin: 25px 50px;
 }
-/*タブレット用CSS*/
+
+#Portfolios-text{
+    text-align: center;
+}
+#Contact-wrap{
+    display: none;
+    width: 100%;
+}
+
+.Contact-photo-space{
+    background-image: url(renga.jpeg);
+    background-size: contain;
+}
+
+.form-title{
+    text-align: center;
+    font-family: 'Prata', serif;
+}
+
+#flex-form{
+  display: flex;
+  justify-content: center;
+}
+
+
+.contact-p{
+    font-size: 16px;
+    color: black;
+}
+
+.contact-p::before{
+    content:"必須";
+    background-color: red;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.form-area{
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px 80px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.form-area:focus{
+    border-color: #ffff00;
+}
+
+#message-form-area{
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+#message-form-area:focus{
+    border-color: #ffff00;
+}
+
+#button-space{
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: #ffea00;
+    outline: none;
+    border-color: #ffea00;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px 120px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: #ffd900;
+    border-color: #ffd900;
+    transition: 1.0s;
+}
+
+
+
+/*タブレット用CSS1000px*/
 @media (max-width: 1000px){
     .header-item{
         font-size: 25px;
     }
+    
     .title-text{
         font-size: 50px;
     }
+    
     .about-title{
         font-size: 13px;
     }
+    
     #Own-photo{
         width: 400px;
         height: 400px;
         border-radius: 50%;
     }
+    
     .about-p{
         font-size: 5px;
         margin: 35px;
     }
     
+    #flex-form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .form-area{
+        width: 400px;
+        padding: 20px;
+    }
+    #message-form-area{
+        width: 400px;
+    }
 }
 /*スマホ用CSS670px*/
 @media (max-width: 670px){
     .header-item{
         font-size: 20px;
     }
+    
     .title-text{
         font-size: 45px;
     }
+    
     .about-title{
         font-size: 15px;
     }
+    
     .self-image{
         display: flex;
         flex-wrap: wrap;
         margin: 0px;
     }
+    
     .photo-space{
         width: 100%;
         text-align: center;
     }
+    
     #Own-photo{
         border-radius: 50%;
         max-width: 100%;
         height: auto;
     }
+    
     .self-introduction{
         width: 100%;
         margin-top: 50px;
     }
+
     .about-p{
         font-size: 10px;
+    }
+    
+    .form-area{
+        width: 50%;
+    }
+    #message-form-area{
+        width: 50%;
     }
 }
